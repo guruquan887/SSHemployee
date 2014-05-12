@@ -1,8 +1,16 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<!-- 职员列表 -->
+<s:url action="listemployee" namespace="/emp" var="listemployee"></s:url>
+<!-- 职员添加 -->
+<s:url action="addemployee" namespace="/emp" var="addemployee"></s:url>
+<!-- 职员更新之前 -->
+<s:url action="updateBeforeemployee" namespace="/emp" var="updateBeforeemployee"></s:url>
+
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -21,6 +29,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    This is my JSP page. <br>
+
+    <form name="listemployee" action="emp/listemployee" method="post">
+    <input type="submit" value="列表"/>
+    </form>
+    </form>
+			<div>
+                <ul>
+                <li><a href="${listemployee}" target="_blank">职员列表</a></li>
+                <li><a href="${addemployee}" target="_blank">职员添加</a></li>                
+                <li><a href="${updateBeforeemployee}" target="_blank">职员更新</a></li>
+              </ul>
+            </div> 
   </body>
 </html>
