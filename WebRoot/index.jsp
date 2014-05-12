@@ -33,7 +33,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <form name="listemployee" action="emp/listemployee" method="post">
     <input type="submit" value="列表"/>
     </form>
-    </form>
 			<div>
                 <ul>
                 <li><a href="${listemployee}" target="_blank">职员列表</a></li>

@@ -2,7 +2,7 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 	<package name="employ" namespace="/emp" extends="struts-default"> 
-		<action name="*employee" class="com.ucap.emp.action.EmployeeAction" method="{1}">
+		<action name="*employee" class="employeeAction" method="{1}">
          	<result name="add">/WEB-INF/pages/add.jsp</result>
          	<result name="update">/WEB-INF/pages/update.jsp</result>
          	<result name="list">/WEB-INF/pages/list.jsp</result>
