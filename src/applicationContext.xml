@@ -9,4 +9,11 @@
 	<bean id="employeeAction"  class="com.ucap.emp.action.EmployeeAction">          
 	</bean>	
 
+	<!-- 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation"
+			value="classpath:hibernate.cfg.xml">
+		</property>
+	</bean>
 </beans>

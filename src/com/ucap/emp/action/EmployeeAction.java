@@ -42,7 +42,6 @@ public class EmployeeAction extends ActionSupport{
 	 * @return
 	 */     
 	public String list(){
-		System.out.println("这里是EmployeeAction文件spring功能支持");
 		System.out.println("这里是EmployeeAction文件list");
 		//list = this.employeeService.findAll(employee); 
 		// ServletActionContext.getRequest().setAttribute("list", list); 
