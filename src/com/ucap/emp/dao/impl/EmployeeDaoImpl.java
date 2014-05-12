@@ -12,8 +12,8 @@ public class EmployeeDaoImpl extends HibernateDaoSupport implements EmployeeDao 
 	@Override
 	public void saveEmployee(Employee employee) {
 		// TODO Auto-generated method stub
+		System.out.println("这里是EmployeeDaoImpl文件saveEmployee");
 		this.getHibernateTemplate().save(employee);
-
 	}
 
 	@Override
@@ -41,11 +41,13 @@ public class EmployeeDaoImpl extends HibernateDaoSupport implements EmployeeDao 
 	@Override
 	public List<Employee> findAllEmployee(Employee employee) {
 		// TODO Auto-generated method stub
-		String hql="from Employee  ";   
-		String where =" where 1= 1 ";   
+		String hql="from Employee  "; 
+		String where =" where 1= 1 "; 
+		System.out.println("这里是EmployeeDaoImpl文件");		
 		if(employee.getName()!=null&&!"".equals(employee.getName())){   
-			hql+=where+" and name like '%"+employee.getName()+"%' order  by id desc";    
-		}   
+			hql+=where+" and name like '%"+employee.getName()+"%' order by id desc";    
+		}
+		System.out.println("这里是EmployeeDaoImpl文件结束");
 		return this.getHibernateTemplate().find(hql); 
 	}
 

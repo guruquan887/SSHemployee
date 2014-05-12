@@ -1,12 +1,12 @@
 package com.ucap.emp.action;
 
-//import java.util.List;
+import java.util.List;
 
 import com.opensymphony.xwork2.ActionSupport;
 //import org.apache.struts2.ServletActionContext;
 
-//import com.ucap.emp.pojo.Employee;  
-//import com.ucap.emp.service.EmployeeService; 
+import com.ucap.emp.pojo.Employee;  
+import com.ucap.emp.service.EmployeeService; 
 
 public class EmployeeAction extends ActionSupport{
 
@@ -14,6 +14,7 @@ public class EmployeeAction extends ActionSupport{
 	private static final long serialVersionUID = 1L;
 	/**
 	 *
+	 */
 	private Employee employee;
 	private List<Employee> list;
 	private EmployeeService employeeService;//该对象采用 Spring依赖注入
@@ -36,15 +37,16 @@ public class EmployeeAction extends ActionSupport{
 	public void setEmployee(Employee employee) {
 		this.employee = employee;   
 	} 
-	*/
+	
 	/**
 	 * 查询 
 	 * @return
 	 */     
 	public String list(){
 		System.out.println("这里是EmployeeAction文件list");
-		//list = this.employeeService.findAll(employee); 
-		// ServletActionContext.getRequest().setAttribute("list", list); 
+		list = this.employeeService.findAll(employee); 
+		//ServletActionContext.getRequest().setAttribute("list", list); 
+		System.out.println("这里是EmployeeAction文件list结束");
 		return "list";  
 	}
 	/**
@@ -60,12 +62,13 @@ public class EmployeeAction extends ActionSupport{
 	 * 增加保存 
 	 * @param
 	 * @return
-	 
+	 */
 	public String addSave(){
+		System.out.println("这里是EmployeeAction文件addSave");
 		this.employeeService.save(this.employee);
 		employee=new Employee();
 		return list();
-	}*/
+	}
 	
 	/**
 	 * 更改之前 

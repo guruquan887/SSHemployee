@@ -49,7 +49,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<td align="center">${item.name}</td>           
 					<td align="center">${item.age}</td>            
 					
-					<td align="center">${item.sex==0?"1":"女"}</td>         
+					<td align="center">${item.sex==0?"男":"女"}</td>         
 					<td align="center">${item.tel}</td>           
 					<td align="center">${item.address}</td>           
 					<td align="center">
