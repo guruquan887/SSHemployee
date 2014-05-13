@@ -8,8 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <s:url action="listemployee" namespace="/emp" var="listemployee"></s:url>
 <!-- 职员添加 -->
 <s:url action="addemployee" namespace="/emp" var="addemployee"></s:url>
-<!-- 职员更新之前 -->
-<s:url action="updateBeforeemployee" namespace="/emp" var="updateBeforeemployee"></s:url>
+
 
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -37,7 +36,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <ul>
                 <li><a href="${listemployee}" target="_blank">职员列表</a></li>
                 <li><a href="${addemployee}" target="_blank">职员添加</a></li>                
-                <li><a href="${updateBeforeemployee}" target="_blank">职员更新</a></li>
               </ul>
             </div> 
   </body>
