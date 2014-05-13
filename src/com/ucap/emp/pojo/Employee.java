@@ -16,13 +16,12 @@ public class Employee  implements java.io.Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
 	private Integer id;
-    private String name;
-    private String age;
-    private String sex;
-    private String tel;
-    private String address;
+     private String name;
+     private String age;
+     private String sex;
+     private String tel;
+     private String address;
 
 
     // Constructors
@@ -31,15 +30,9 @@ public class Employee  implements java.io.Serializable {
     public Employee() {
     }
 
-	/** minimal constructor */
-    public Employee(Integer id) {
-        this.id = id;
-    }
     
     /** full constructor */
-    public Employee(Integer id, String name, String age, String sex, String tel, String address) {
-    	//super();
-    	this.id = id;
+    public Employee(String name, String age, String sex, String tel, String address) {
         this.name = name;
         this.age = age;
         this.sex = sex;
@@ -97,5 +90,13 @@ public class Employee  implements java.io.Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
+   
+
+
+
+
+
+
+
 
 }

@@ -21,7 +21,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public List<Employee> findAll(Employee employee) {
-		System.out.println("这里是EmployeeServiceImpl文件");
 		// TODO Auto-generated method stub
 		return this.employeeDao.findAllEmployee(employee);
 	}
