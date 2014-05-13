@@ -45,6 +45,7 @@ public class EmployeeAction extends ActionSupport{
 	public String list(){
 		list = this.employeeService.findAll(employee); 
 		//ServletActionContext.getRequest().setAttribute("list", list); 
+		System.out.println("这里是EmployeeAction文件list结束");
 		return "list";  
 	}
 	/**
