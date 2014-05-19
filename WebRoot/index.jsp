@@ -8,6 +8,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <s:url action="listemployee" namespace="/emp" var="listemployee"></s:url>
 <!-- 职员添加 -->
 <s:url action="addemployee" namespace="/emp" var="addemployee"></s:url>
+<!-- 用户列表 -->
+<s:url action="userlist" namespace="/emp" var="userlist"></s:url>
 
 
 
@@ -34,8 +36,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </form>
 			<div>
                 <ul>
+                <li><a href="form.jsp" target="_blank">form表单</a></li> 
                 <li><a href="${listemployee}" target="_blank">职员列表</a></li>
-                <li><a href="${addemployee}" target="_blank">职员添加</a></li>                
+                <li><a href="${addemployee}" target="_blank">职员添加</a></li> 
+                <li><a href="${userlist}" target="_blank">iterator的list列表</a></li>               
               </ul>
             </div> 
   </body>

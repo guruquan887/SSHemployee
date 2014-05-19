@@ -18,6 +18,12 @@
 	<bean id="employeeAction"  class="com.ucap.emp.action.EmployeeAction"> 
 		<property name="employeeService" ref="employeeService"></property>         
 	</bean>
+	
+	<!-- 配置userAction  -->
+	<bean id="userAction"  class="com.ucap.emp.action.UserAction">          
+	</bean>
+	
+	
 
 	<!-- 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->
 	<bean id="sessionFactory"

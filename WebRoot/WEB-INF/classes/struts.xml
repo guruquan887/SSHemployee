@@ -8,4 +8,9 @@
          	<result name="list">/WEB-INF/pages/list.jsp</result>
 		</action>     
 	</package> 
+	<package name="user" namespace="/emp" extends="struts-default"> 
+		<action name="user*" class="userAction" method="{1}">
+         	<result name="list">/iterator.jsp</result>
+		</action>     
+	</package> 
 </struts>    
