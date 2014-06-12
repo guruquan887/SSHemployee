@@ -22,6 +22,9 @@
 	<!-- 配置userAction  -->
 	<bean id="userAction"  class="com.ucap.emp.action.UserAction">          
 	</bean>
+	<!-- 配置indexAction  -->
+	<bean id="indxeAction"  class="com.lyq.action.IndexAction">          
+	</bean>
 	
 	
 

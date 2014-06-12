@@ -57,14 +57,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <td>key=value</td>  
       <td>userId</td>  
       <td>userName</td>  
-      <td>userPwd</td>   
+      <td>userPwd</td> 
+      <td>obj</td>   
     </tr>  
     <s:iterator value="studentMap" id="column">  
     <tr>  
     <td><s:property value="#column"/></td>  
     <td><s:property value="value.userId"/></td>  
     <td><s:property value="value.userName"/></td>  
-    <td><s:property value="value.userPwd"/></td>   
+    <td><s:property value="value.userPwd"/></td>  
+    <td>有<s:property value="studentMap"/>个对象实例</td> 
     </tr>  
     </s:iterator>  
   </table>  
@@ -77,14 +79,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <td>key=value</td>  
       <td>userId</td>  
       <td>userName</td>  
-      <td>userPwd</td>   
+      <td>userPwd</td> 
+      <td>obj</td>   
     </tr>  
     <s:iterator value="arrayMap" id="column">  
     <tr>  
     <td><s:property value="#column"/></td>  
     <td><s:property value="value[0]"/></td>  
     <td><s:property value="value[1]"/></td>  
-    <td><s:property value="value[2]"/></td>  
+    <td><s:property value="value[2]"/></td> 
+    <td>有<s:property value="arrayMap.size()"/>个对象实例</td> 
     </tr>  
     </s:iterator>  
   </table>  
@@ -95,7 +99,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <td>class</td>  
       <td>userId</td>  
       <td>userName</td>  
-      <td>userPwd</td>   
+      <td>userPwd</td>
+      <td>obj</td>    
     </tr>  
     
   <s:iterator value="listMap" id="listid">  
@@ -104,7 +109,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <td><s:property value="key"/></td>  
             <td><s:property value="userId"/></td>  
           	<td><s:property value="userName"/></td>  
-            <td><s:property value="userPwd"/></td>   
+            <td><s:property value="userPwd"/></td> 
+            <td>有<s:property value="listMap.size()"/>个对象实例</td>  
         </tr>  
     </s:iterator>  
 </s:iterator> 
