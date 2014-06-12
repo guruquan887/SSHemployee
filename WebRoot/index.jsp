@@ -42,10 +42,5 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <li><a href="${userlist}" target="_blank">iterator的list列表</a></li>               
               </ul>
             </div> 
-<div>
-	<ul> 
-		<li><s:a action="categoryindex" namespace="/emp" target="_blank">类别category</s:a></li>               
-	</ul>
-</div>
   </body>
 </html>

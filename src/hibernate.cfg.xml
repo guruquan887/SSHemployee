@@ -15,7 +15,6 @@
         <property name="myeclipse.connection.profile">grq</property>    
         
         <mapping resource="com/ucap/emp/pojo/Employee.hbm.xml" />
-        <mapping resource="com/lyq/model/product/ProductCategory.hbm.xml"/>
     </session-factory>
 
 </hibernate-configuration>

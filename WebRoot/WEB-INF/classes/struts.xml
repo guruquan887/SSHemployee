@@ -13,10 +13,4 @@
          	<result name="list">/iterator.jsp</result>
 		</action>     
 	</package> 
-	<package name="category" namespace="/emp" extends="struts-default"> 
-		<action name="categoryindex" class="indexAction" >
-         	<result>/WEB-INF/pages/category.jsp</result>
-		</action>     
-	</package>
-	
 </struts>    
