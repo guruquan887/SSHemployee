@@ -1,0 +1,8 @@
+把JS脚本拷贝到您的页面里
+然后修改脚本里FLASH图片显示的尺寸 
+var focus_width=240
+var focus_height=200
+
+并不用在页面里插入FLASH文件
+
+使用相对路径和绝对路径都可以正常显示
