@@ -6,7 +6,7 @@ bPlay.src = "http://makewing.com/lanren/js/18/images/bu_pla.gif";
 var bPause=new Image;
 bPause.src = "http://makewing.com/lanren/js/18/images/bu_pau.gif";
 nn=1;
-setTimeout('change_img()',4000);
+setTimeout('change_img()',10);
 function resetPlay(){
 isStart=true;
 var e = document.getElementById("top_slider");

@@ -13,4 +13,9 @@
          	<result name="list">/iterator.jsp</result>
 		</action>     
 	</package> 
+	<package name="num" namespace="/num" extends="struts-default"> 
+		<action name="num_*" class="numBean" method="{1}">
+         	<result name="main">/WEB-INF/pages/numguess.jsp</result>
+		</action>     
+	</package> 
 </struts>    

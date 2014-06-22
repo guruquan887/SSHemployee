@@ -23,6 +23,10 @@
 	<bean id="userAction"  class="com.ucap.emp.action.UserAction">          
 	</bean>
 	
+	<!-- 配置num  -->
+	<bean id="numBean"  class="num.NumberGuessBean">          
+	</bean>
+	
 	
 
 	<!-- 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->
