@@ -38,6 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <ul>
                 <li><a href="form.jsp" target="_blank">form表单</a></li> 
                 <li><a href="setInterval.jsp" target="_blank">setInterval周期函数</a></li>
+                <li><a href="5.html" target="_blank">倒计时</a></li>
                 <li><a href="${listemployee}" target="_blank">职员列表</a></li>
                 <li><a href="${addemployee}" target="_blank">职员添加</a></li> 
                 <li><a href="${userlist}" target="_blank">iterator的list列表</a></li>
