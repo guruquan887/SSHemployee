@@ -28,10 +28,10 @@ public class NumberGuessBean implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private int answer;    //ï¿½ð°¸£ï¿½ï¿½ï¿½ï¿½ï¿½
-    private String hint;   //ï¿½ï¿½Ê¾
-    private int numGuesses;//ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-    private boolean success;//ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+    private int answer;    //´ð°¸£¬½±Ïî
+    private String hint;   //ÌáÊ¾
+    private int numGuesses;//µÚ¼¸´ÎÃþ½±
+    private boolean success;//ÊÇ·ñ²ÂÖÐ
     private Random random = new Random();
 
     public NumberGuessBean() {
