@@ -8,17 +8,17 @@
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript">
 $(function(){
-	countDown("2014/6/24 20:59:59","#demo01 .day","#demo01 .hour","#demo01 .minute","#demo01 .second");
-	countDown("2014/8/10 22:59:59",null,"#demo02 .hour","#demo02 .minute","#demo02 .second");
-	countDown("2014/8/10 22:59:00",null,null,null,"#demo03 .second");
+	countDown("2014/6/24 22:00:00","#demo01 .day","#demo01 .hour","#demo01 .minute","#demo01 .second");
+	countDown("2014/6/24 22:00:00",null,"#demo02 .hour","#demo02 .minute","#demo02 .second");
+	countDown("2014/6/24 22:00:00",null,null,null,"#demo03 .second");
 });
 
 function countDown(time,day_elem,hour_elem,minute_elem,second_elem){
 	//if(typeof end_time == "string")
 	var end_time = new Date(time).getTime(),//月份是实际月份-1
 	//current_time = new Date().getTime(),
-	//sys_second = (end_time-new Date().getTime())/1000;//设定到某个时间点
-	sys_second = 10;//设定剩余时长
+	sys_second = (end_time-new Date().getTime())/1000;//设定到某个时间点
+	//sys_second = 10;//设定剩余时长
 	var timer = setInterval(function(){
 		if (sys_second > 0) {
 			sys_second -= 1;
@@ -51,14 +51,14 @@ body{font:12px/180% Arial, Helvetica, sans-serif,"宋体";}
 #demo02{width:208px;background-position:-75px 0;}
 #demo03{width:58px;background-position:-225px 0;}
 </style>
-
+截止2014/6/24 22:00:00还有剩余:<p>
 <div class="colockbox" id="demo01">
 	<span class="day">-</span>
 	<span class="hour">-</span>
 	<span class="minute">-</span>
 	<span class="second">-</span>
 </div>
-
+截止2014/6/24 22:00:00还有剩余:<p>
 <div class="colockbox" id="demo02">
 	<span class="hour">-</span>
 	<span class="minute">-</span>
