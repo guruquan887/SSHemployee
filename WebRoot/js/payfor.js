@@ -163,7 +163,7 @@ var setAmount = {
             $(obj).focus();
         }
     }
-}
+};
 
 function BuyUrl(wid) {
     var pcounts = $("input[id^=qty_item_]").val();
@@ -188,7 +188,7 @@ $(document).ready(function () {
 
 function recalc() {
 
-    $("input[id^=total_item]").val()
+    $("input[id^=total_item]").val();
 
     //产品价格统计
     $("[id^=total_item]").calc(
