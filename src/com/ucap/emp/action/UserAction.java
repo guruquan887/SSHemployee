@@ -26,14 +26,14 @@ public class UserAction extends ActionSupport{
       
     private Map<String,List<User>> listMap;  
 	/**
-	 * ´ÓrequestµÃµ½list
+	 * ï¿½ï¿½requestï¿½Ãµï¿½list
 	 * @return
 	 */ 
 	public List<User> getMylist() {		
 		return mylist;    
 	}
 	/**
-	 * °Ñlist·Åµ½requestÖĞ
+	 * ï¿½ï¿½listï¿½Åµï¿½requestï¿½ï¿½
 	 * @return 
 	 */
 	public void setMylist(List<User> list) {
@@ -57,7 +57,7 @@ public class UserAction extends ActionSupport{
 		mylist.add(user2); 
 		
 		
-		//s:iterator¸÷ÖÖ±éÀúÓÃ·¨
+		//s:iteratorï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Ã·ï¿½
       	map=new HashMap<String,String>();  
         map.put("1", "one");  
         map.put("2", "two");  
@@ -65,12 +65,12 @@ public class UserAction extends ActionSupport{
         studentMap=new HashMap<String,User>();  
 		User usermap = new User();
 		usermap.setUserId(22L);	
-		usermap.setUserName("ÕÅÈı");
+		usermap.setUserName("ï¿½ï¿½ï¿½ï¿½");
 		usermap.setUserPwd("123456");		
 		studentMap.put("student0",usermap);
 		studentMap.put("student1",new User(new Long(11111L),"nameok","passwordok")); 
         studentMap.put("student2",new User(new Long(2),"zhangsan","mima"));  
-        studentMap.put("student3",new User(new Long(3),"ÕÅÈı2","ÃÜÂë"));   
+        studentMap.put("student3",new User(new Long(3),"ï¿½ï¿½ï¿½ï¿½2","ï¿½ï¿½ï¿½ï¿½"));   
         
         arrayMap=new HashMap<String,String[]>();  
         arrayMap.put("arr1", new String[]{"1","2003401","leejie"});  
@@ -83,22 +83,22 @@ public class UserAction extends ActionSupport{
         List<User> list0=new ArrayList<User>();
 		User usermap1 = new User();		
 		usermap1.setUserId(44L);
-		usermap1.setUserName("lisiÀîËÄ");
+		usermap1.setUserName("lisiï¿½ï¿½ï¿½ï¿½");
 		usermap1.setUserPwd("1234ss");
 		list0.add(usermap1);
 		listMap.put("class0", list0);
        
         
         List<User> list1=new ArrayList<User>(); 
-        list1.add(new User(new Long(1),"ÕÅÈı1","ÄĞ"));  
-        list1.add(new User(new Long(2),"ÕÅÈı2","ÄĞ"));  
-        list1.add(new User(new Long(3),"ÕÅÈı3","ÄĞ"));  
+        list1.add(new User(new Long(1),"ï¿½ï¿½ï¿½ï¿½1","ï¿½ï¿½"));  
+        list1.add(new User(new Long(2),"ï¿½ï¿½ï¿½ï¿½2","ï¿½ï¿½"));  
+        list1.add(new User(new Long(3),"ï¿½ï¿½ï¿½ï¿½3","ï¿½ï¿½"));  
         listMap.put("class1", list1); 	          
         List<User> list2=new ArrayList<User>();  
-        list2.add(new User(new Long(1),"ÀîËÄ1","ÄĞ"));  
-        list2.add(new User(new Long(2),"ÀîËÄ2","ÄĞ"));  
-        list2.add(new User(new Long(3),"ÀîËÄ3","ÄĞ"));  
-        list2.add(new User(new Long(4),"ÀîËÄ4","ÄĞ"));  
+        list2.add(new User(new Long(1),"ï¿½ï¿½ï¿½ï¿½1","ï¿½ï¿½"));  
+        list2.add(new User(new Long(2),"ï¿½ï¿½ï¿½ï¿½2","ï¿½ï¿½"));  
+        list2.add(new User(new Long(3),"ï¿½ï¿½ï¿½ï¿½3","ï¿½ï¿½"));  
+        list2.add(new User(new Long(4),"ï¿½ï¿½ï¿½ï¿½4","ï¿½ï¿½"));  
         listMap.put("class2", list2);  
         
         
