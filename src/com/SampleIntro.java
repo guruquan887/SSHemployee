@@ -25,6 +25,8 @@ public class SampleIntro
       {
         String id = res.getString("id");
         System.out.println(id);
+        Date n = res.getDate("createTime");
+        System.out.println(n);
       }
       res.close();
 
